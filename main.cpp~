@@ -1,0 +1,86 @@
+#include <iostream>
+#include <vector>
+#include <ctime>
+#include "Racional.h"
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::vector;
+
+int int main(int argc, char*argv[]){
+	int opcion=0;;
+	int nume, denom;
+	vector <Racionales> racionales;
+	vector <string> racionales;
+
+	while(opcion!=7){
+
+		cout<<"1-crear racionales"<<endl
+			<<"2-suma de racionales"<<endl
+			<<"3-resta de racionales"<<endl
+			<<"4-multiplicacion de racionales"<<endl
+			<<"5-Division de racionales"<<endl
+			<<"6-ver Historial de racionales"<<endl
+			<<"7-crear racionales"<<endl;
+
+			cin>>opcion;
+
+			if (opcion==1){
+				cout<<"ingrese su numerador"<<endl;
+				cin>>num;
+				cout<<"1-ingrese su denominador"<<endl;
+				cin>>denom;
+				if (denom==0){
+					Racional rac(num);
+					Racionales.push_back(rac);
+				}else{
+					Racional rac(num.denom);
+					Racionales.push_back(rac);
+				}
+
+			}else if (opcion==2){
+				int indice1, indice2;
+				Racional total;
+				for (int i = 0; i <Racionales.size(); i++){
+					 cout<<i<<Racionales.at(i).toString()<<endl;
+				}
+
+				cout<<"elija su primer valor"<<endl;
+				cin>>indice1;
+				cout<<"Elija su segundo valor"<<endl;
+				cin>>indice2;
+
+				total=Racionales.at(indice1) + Racionales.at(indice2);
+
+
+
+				
+			}else if (opcion==3){
+				 
+				
+			}else if (opcion==4){
+				cout<<"ingrese su numerador"<<endl;
+				cin>>num;
+				cout<<"1-iingrese su denominador"<<endl;
+				cin>>denom;
+				
+			}else if (opcion==5){
+				cout<<"ingrese su numerador"<<endl;
+				cin>>num;
+				cout<<"1-iingrese su denominador"<<endl;
+				cin>>denom;
+				
+			}else if (opcion==6){
+				cout<<"ingrese su numerador"<<endl;
+				cin>>num;
+				cout<<"1-iingrese su denominador"<<endl;
+				cin>>denom;
+				
+			}
+
+		return 0;
+
+
+	}
+}
